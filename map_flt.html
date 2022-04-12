@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3950f731ca5f45e8b6c2362d3e496876 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@master/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3950f731ca5f45e8b6c2362d3e496876" ></div>
+        
+</body>
+<script>    
+    
+            var map_3950f731ca5f45e8b6c2362d3e496876 = L.map(
+                "map_3950f731ca5f45e8b6c2362d3e496876",
+                {
+                    center: [41.3298, 69.263],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cbcf47da969f4711ac6f05abbf089808 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            var heat_map_8c02ba3505a84cf29d478cb4147e9d40 = L.heatLayer(
+                [[41.3827, 69.2165], [41.3115, 69.2405], [41.2864, 69.186], [41.2724, 69.193], [41.3056, 69.1521], [41.2442, 69.2862], [41.2496, 69.3821], [41.2197, 69.2242], [41.3294, 69.2556], [41.3626, 69.226], [41.2469, 69.3225], [41.3301, 69.3137], [41.3353, 69.1643], [41.361, 69.2098], [41.2714, 69.3509], [41.2408, 69.2061], [41.3694, 69.2404], [41.322, 69.2435], [41.3171, 69.3165], [41.3167, 69.1909], [41.2999, 69.3026], [41.3249, 69.3353], [41.3261, 69.2935], [41.2222, 69.3121], [41.2849, 69.2675], [41.2955, 69.3292], [41.294, 69.1501], [41.2977, 69.313], [41.3379, 69.2854], [41.3113, 69.2778], [41.3225, 69.1986], [41.2945, 69.297], [41.3821, 69.2082], [41.2745, 69.1735], [41.2823, 69.1926], [41.2421, 69.1712], [41.2717, 69.3304], [41.2949, 69.3154], [41.2873, 69.2557], [41.2445, 69.2742], [41.2152, 69.2615], [41.2698, 69.2457], [41.3724, 69.2871]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 30}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            var circle_marker_2bc8fe043ecf4bd890056493f450701f = L.circleMarker(
+                [41.3827, 69.2165],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_2bc8fe043ecf4bd890056493f450701f.bindTooltip(
+                `<div>
+                     Sana: 2020 01 01<br>                    Vaqt: 14:00<br>Jarohat: 3<br>Avtohalokat turi: turgan TVga urilish
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_60b405b9e4f3400cba3941973a520464 = L.circleMarker(
+                [41.3115, 69.2405],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_60b405b9e4f3400cba3941973a520464.bindTooltip(
+                `<div>
+                     Sana: 2020 01 10<br>                    Vaqt: 00:15<br>Jarohat: 2<br>O'lim: 2<br>Avtohalokat turi: turgan TVga urilish
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3bfa46d032af4e5c85a1973af87f1d9c = L.circleMarker(
+                [41.2864, 69.186],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_3bfa46d032af4e5c85a1973af87f1d9c.bindTooltip(
+                `<div>
+                     Sana: 2020 01 15<br>                    Vaqt: 00:01<br>Jarohat: 6<br>Avtohalokat turi: turgan TVga urilish
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_829b6f5acb7548f782996419cf9e641c = L.circleMarker(
+                [41.2724, 69.193],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_829b6f5acb7548f782996419cf9e641c.bindTooltip(
+                `<div>
+                     Sana: 2020 01 22<br>                    Vaqt: 05:40<br>Jarohat: 2<br>Avtohalokat turi: YTHning boshqa turlari
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9e152ea328904cbc9b79e36d76e812dd = L.circleMarker(
+                [41.3056, 69.1521],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_9e152ea328904cbc9b79e36d76e812dd.bindTooltip(
+                `<div>
+                     Sana: 2020 02 14<br>                    Vaqt: 21:00<br>Jarohat: 1<br>Avtohalokat turi: turgan TVga urilish
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f0ed0bcc9397400bac62fe420eade32a = L.circleMarker(
+                [41.2442, 69.2862],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_f0ed0bcc9397400bac62fe420eade32a.bindTooltip(
+                `<div>
+                     Sana: 2020 03 06<br>                    Vaqt: 22:20<br>Jarohat: 2<br>Avtohalokat turi: turgan TVga urilish
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_add03d47bc9c4de5ac98d8d1cea00fc8 = L.circleMarker(
+                [41.2496, 69.3821],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_add03d47bc9c4de5ac98d8d1cea00fc8.bindTooltip(
+                `<div>
+                     Sana: 2020 03 07<br>                    Vaqt: 01:00<br>Jarohat: 1<br>Avtohalokat turi: turgan TVga urilish
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d0714f926bd841ef97b72fda6933c175 = L.circleMarker(
+                [41.2197, 69.2242],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_d0714f926bd841ef97b72fda6933c175.bindTooltip(
+                `<div>
+                     Sana: 2020 03 19<br>                    Vaqt: 01:45<br>Jarohat: 1<br>Avtohalokat turi: turgan TVga urilish
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4deb9fd2e7e64b5dace8107fd477fbac = L.circleMarker(
+                [41.3294, 69.2556],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_4deb9fd2e7e64b5dace8107fd477fbac.bindTooltip(
+                `<div>
+                     Sana: 2020 03 31<br>                    Vaqt: 09:00<br>Jarohat: 1<br>Avtohalokat turi: YTHning boshqa turlari
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_42d56d40bda742fcb66670a1f3e16c4b = L.circleMarker(
+                [41.3626, 69.226],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_42d56d40bda742fcb66670a1f3e16c4b.bindTooltip(
+                `<div>
+                     Sana: 2020 04 03<br>                    Vaqt: 13:00<br>Jarohat: 1<br>Avtohalokat turi: turgan TVga urilish
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e1d3bb7164804c2a8e8ab572121cc110 = L.circleMarker(
+                [41.2469, 69.3225],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_e1d3bb7164804c2a8e8ab572121cc110.bindTooltip(
+                `<div>
+                     Sana: 2020 04 28<br>                    Vaqt: 20:10<br>Jarohat: 2<br>Avtohalokat turi: turgan TVga urilish
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bc6bcd4a4ba148cc90fda2c3ee44def9 = L.circleMarker(
+                [41.3301, 69.3137],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_bc6bcd4a4ba148cc90fda2c3ee44def9.bindTooltip(
+                `<div>
+                     Sana: 2020 06 09<br>                    Vaqt: 10:09<br>Jarohat: 2<br>Avtohalokat turi: turgan TVga urilish
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1643b0d7479b483187c54eafbfc51bf4 = L.circleMarker(
+                [41.3353, 69.1643],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_1643b0d7479b483187c54eafbfc51bf4.bindTooltip(
+                `<div>
+                     Sana: 2020 06 18<br>                    Vaqt: 06:00<br>O'lim: 2<br>Avtohalokat turi: YTHning boshqa turlari
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7a32222340ba4f818bf2541ffc7795c6 = L.circleMarker(
+                [41.361, 69.2098],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_7a32222340ba4f818bf2541ffc7795c6.bindTooltip(
+                `<div>
+                     Sana: 2020 06 20<br>                    Vaqt: 21:20<br>Jarohat: 1<br>Avtohalokat turi: YTHning boshqa turlari
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c7cb09d7d7a04d0aaf17e95f83fe1a8d = L.circleMarker(
+                [41.2714, 69.3509],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_c7cb09d7d7a04d0aaf17e95f83fe1a8d.bindTooltip(
+                `<div>
+                     Sana: 2020 07 13<br>                    Vaqt: 08:30<br>Jarohat: 1<br>Avtohalokat turi: YTHning boshqa turlari
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d95200aac06a4dfeb23e3fef3dd1a452 = L.circleMarker(
+                [41.2408, 69.2061],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_d95200aac06a4dfeb23e3fef3dd1a452.bindTooltip(
+                `<div>
+                     Sana: 2020 08 30<br>                    Vaqt: 18:30<br>Jarohat: 1<br>Avtohalokat turi: YTHning boshqa turlari
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_083a9aedd822478488d4103583437dad = L.circleMarker(
+                [41.3694, 69.2404],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_083a9aedd822478488d4103583437dad.bindTooltip(
+                `<div>
+                     Sana: 2021 02 03<br>                    Vaqt: 19:26<br>Jarohat: 1<br>Avtohalokat turi: turgan TVga urilish
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_000a4939f5c346e8875ba0ff1bb616c1 = L.circleMarker(
+                [41.322, 69.2435],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_000a4939f5c346e8875ba0ff1bb616c1.bindTooltip(
+                `<div>
+                     Sana: 2021 02 09<br>                    Vaqt: 15:18<br>Jarohat: 1<br>Avtohalokat turi: turgan TVga urilish
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a899a9e3591e4d28a5b3e8fcfd640139 = L.circleMarker(
+                [41.3171, 69.3165],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_a899a9e3591e4d28a5b3e8fcfd640139.bindTooltip(
+                `<div>
+                     Sana: 2021 02 12<br>                    Vaqt: 09:28<br>Jarohat: 1<br>Avtohalokat turi: YTHning boshqa turlari
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7b24ee1254244c9eb8db9eeb5442d501 = L.circleMarker(
+                [41.3167, 69.1909],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_7b24ee1254244c9eb8db9eeb5442d501.bindTooltip(
+                `<div>
+                     Sana: 2021 02 15<br>                    Vaqt: 15:47<br>Jarohat: 1<br>Avtohalokat turi: turgan TVga urilish
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1c99f9c7de6c497e8ea12ae3a4acba7f = L.circleMarker(
+                [41.2999, 69.3026],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_1c99f9c7de6c497e8ea12ae3a4acba7f.bindTooltip(
+                `<div>
+                     Sana: 2021 02 16<br>                    Vaqt: 22:30<br>Jarohat: 1<br>Avtohalokat turi: turgan TVga urilish
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2e670efab82d4a098425eb58ea2bb3d1 = L.circleMarker(
+                [41.3249, 69.3353],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_2e670efab82d4a098425eb58ea2bb3d1.bindTooltip(
+                `<div>
+                     Sana: 2021 02 22<br>                    Vaqt: 17:10<br>Jarohat: 1<br>Avtohalokat turi: YTHning boshqa turlari
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a7f8bc5647e44712be0ce920fc459c83 = L.circleMarker(
+                [41.3261, 69.2935],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_a7f8bc5647e44712be0ce920fc459c83.bindTooltip(
+                `<div>
+                     Sana: 2021 05 08<br>                    Vaqt: 16:00<br>Havo holati: kun ochiq<br>Jarohat: 1<br>Avtohalokat turi: YTHning boshqa turlari
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7986e95060914f5e96f54af3743659ac = L.circleMarker(
+                [41.2222, 69.3121],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_7986e95060914f5e96f54af3743659ac.bindTooltip(
+                `<div>
+                     Sana: 2021 05 30<br>                    Vaqt: 16:00<br>Havo holati: kun ochiq<br>Jarohat: 2<br>Avtohalokat turi: YTHning boshqa turlari
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fe880d6737524514ad06c38a7aa8e6a0 = L.circleMarker(
+                [41.2849, 69.2675],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_fe880d6737524514ad06c38a7aa8e6a0.bindTooltip(
+                `<div>
+                     Sana: 2021 05 31<br>                    Vaqt: 09:30<br>Havo holati: kun ochiq<br>Jarohat: 1<br>Avtohalokat turi: YTHning boshqa turlari
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6bda0bbe0bee461ea2f37c95d0dd7a4a = L.circleMarker(
+                [41.2955, 69.3292],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_6bda0bbe0bee461ea2f37c95d0dd7a4a.bindTooltip(
+                `<div>
+                     Sana: 2021 01 16<br>                    Vaqt: 10:00<br>Havo holati: kun ochiq<br>Jarohat: 1<br>Avtohalokat turi: YTHning boshqa turlari
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8a4239dcb24e4d08a8a1774b06f47f61 = L.circleMarker(
+                [41.294, 69.1501],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_8a4239dcb24e4d08a8a1774b06f47f61.bindTooltip(
+                `<div>
+                     Sana: 2021 07 28<br>                    Vaqt: 01:45<br>O'lim: 1<br>Avtohalokat turi: turgan TVga urilish
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5d2ea2ac8b9c460a94c061c486b2ff2c = L.circleMarker(
+                [41.2977, 69.313],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_5d2ea2ac8b9c460a94c061c486b2ff2c.bindTooltip(
+                `<div>
+                     Sana: 2021 07 15<br>                    Vaqt: 08:30<br>Havo holati: kun ochiq<br>Jarohat: 1<br>Avtohalokat turi: YTHning boshqa turlari
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3ff51a17b7d948cbb2dba3d369aa2bf2 = L.circleMarker(
+                [41.3379, 69.2854],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_3ff51a17b7d948cbb2dba3d369aa2bf2.bindTooltip(
+                `<div>
+                     Sana: 2021 07 11<br>                    Vaqt: 14:22<br>Havo holati: kun ochiq<br>Jarohat: 1<br>Avtohalokat turi: turgan TVga urilish
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fbebd7f233864e4a91611eef0d41aa35 = L.circleMarker(
+                [41.3113, 69.2778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_fbebd7f233864e4a91611eef0d41aa35.bindTooltip(
+                `<div>
+                     Sana: 2021 07 04<br>                    Vaqt: 02:40<br>Havo holati: kun ochiq<br>Jarohat: 1<br>Avtohalokat turi: YTHning boshqa turlari
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7f4631dbc6e549c2adc8b4b2eb78c57f = L.circleMarker(
+                [41.3225, 69.1986],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_7f4631dbc6e549c2adc8b4b2eb78c57f.bindTooltip(
+                `<div>
+                     Sana: 2021 08 17<br>                    Vaqt: 14:02<br>Havo holati: kun ochiq<br>O'lim: 1<br>Avtohalokat turi: YTHning boshqa turlari
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_194132f64d0e4c2395f2892a7a6f06c7 = L.circleMarker(
+                [41.2945, 69.297],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_194132f64d0e4c2395f2892a7a6f06c7.bindTooltip(
+                `<div>
+                     Sana: 2021 07 22<br>                    Vaqt: 21:00<br>Jarohat: 1<br>Avtohalokat turi: turgan TVga urilish
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c0f575e49f5b443da2da2cffc5caaf61 = L.circleMarker(
+                [41.3821, 69.2082],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_c0f575e49f5b443da2da2cffc5caaf61.bindTooltip(
+                `<div>
+                     Sana: 2021 08 28<br>                    Vaqt: 10:05<br>Havo holati: kun ochiq<br>Jarohat: 1<br>O'lim: 1<br>Avtohalokat turi: turgan TVga urilish
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e3becd5a6a6b460ca5f7405578264973 = L.circleMarker(
+                [41.2745, 69.1735],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_e3becd5a6a6b460ca5f7405578264973.bindTooltip(
+                `<div>
+                     Sana: 2021 08 13<br>                    Vaqt: 10:30<br>Havo holati: kun ochiq<br>Jarohat: 1<br>Avtohalokat turi: turgan TVga urilish
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4595ce1bac1e43daa389b18fc2ca49f5 = L.circleMarker(
+                [41.2823, 69.1926],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_4595ce1bac1e43daa389b18fc2ca49f5.bindTooltip(
+                `<div>
+                     Sana: 2021 08 24<br>                    Vaqt: 22:00<br>Havo holati: kun ochiq<br>Jarohat: 1<br>Avtohalokat turi: YTHning boshqa turlari
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cc9b53782a96439682d70a35819e3729 = L.circleMarker(
+                [41.2421, 69.1712],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_cc9b53782a96439682d70a35819e3729.bindTooltip(
+                `<div>
+                     Sana: 2021 08 28<br>                    Vaqt: 13:00<br>Havo holati: kun ochiq<br>Jarohat: 1<br>Avtohalokat turi: YTHning boshqa turlari
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2f99fcc666e9405d90f5fa46b3638b90 = L.circleMarker(
+                [41.2717, 69.3304],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_2f99fcc666e9405d90f5fa46b3638b90.bindTooltip(
+                `<div>
+                     Sana: 2021 09 30<br>                    Vaqt: 07:45<br>Havo holati: kun ochiq<br>O'lim: 1<br>Avtohalokat turi: YTHning boshqa turlari
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4009a077dadf4c1c9f03647a1fb1a3fc = L.circleMarker(
+                [41.2949, 69.3154],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_4009a077dadf4c1c9f03647a1fb1a3fc.bindTooltip(
+                `<div>
+                     Sana: 2021 11 27<br>                    Vaqt: 12:55<br>Havo holati: kun ochiq<br>Jarohat: 1<br>Avtohalokat turi: YTHning boshqa turlari
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a14b72cb22f6406fb234dd79978fd9eb = L.circleMarker(
+                [41.2873, 69.2557],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_a14b72cb22f6406fb234dd79978fd9eb.bindTooltip(
+                `<div>
+                     Sana: 2021 11 22<br>                    Vaqt: 18:00<br>Havo holati: kun ochiq<br>Jarohat: 1<br>Avtohalokat turi: turgan TVga urilish
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6469608062f54d868d1ab2217305ec83 = L.circleMarker(
+                [41.2445, 69.2742],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_6469608062f54d868d1ab2217305ec83.bindTooltip(
+                `<div>
+                     Sana: 2021 09 29<br>                    Vaqt: 22:45<br>Jarohat: 1<br>O'lim: 1<br>Avtohalokat turi: YTHning boshqa turlari
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4c03f28bb82f47f6800684b47c4a4fb7 = L.circleMarker(
+                [41.2152, 69.2615],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_4c03f28bb82f47f6800684b47c4a4fb7.bindTooltip(
+                `<div>
+                     Sana: 2022 01 21<br>                    Vaqt: 19:55<br>Havo holati: kun ochiq<br>Jarohat: 1<br>O'lim: 1<br>Avtohalokat turi: YTHning boshqa turlari
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e0428d103e204d5f8bbe2fee29b21659 = L.circleMarker(
+                [41.2698, 69.2457],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_e0428d103e204d5f8bbe2fee29b21659.bindTooltip(
+                `<div>
+                     Sana: 2022 01 07<br>                    Vaqt: 09:20<br>Havo holati: kun ochiq<br>Jarohat: 1<br>Avtohalokat turi: YTHning boshqa turlari
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_edd8904723d64c3f900e7bceaeb0ba18 = L.circleMarker(
+                [41.3724, 69.2871],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_3950f731ca5f45e8b6c2362d3e496876);
+        
+    
+            circle_marker_edd8904723d64c3f900e7bceaeb0ba18.bindTooltip(
+                `<div>
+                     Sana: 2022 01 12<br>                    Vaqt: 10:55<br>Havo holati: kun ochiq<br>Jarohat: 1<br>Avtohalokat turi: YTHning boshqa turlari
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
